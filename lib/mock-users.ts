@@ -1,0 +1,48 @@
+import type { User } from "@/types";
+
+export const MOCK_USERS: Record<User["role"], User> = {
+  volunteer: {
+    id: "usr_vol_001",
+    name: "Алексей Волонтёр",
+    email: "volunteer@demo.ru",
+    avatar: "https://api.dicebear.com/9.x/avataaars/svg?seed=Alexey",
+    city: "Москва",
+    interests: ["экология", "образование", "животные"],
+    role: "volunteer",
+    tokenBalance: 150,
+    verificationStatus: "none",
+  },
+  organization: {
+    id: "usr_org_001",
+    name: "ЭкоФонд «Зелёный Город»",
+    email: "org@demo.ru",
+    avatar: "https://api.dicebear.com/9.x/identicon/svg?seed=EcoFund",
+    city: "Санкт-Петербург",
+    interests: ["экология", "сообщества"],
+    role: "organization",
+    tokenBalance: 0,
+    verificationStatus: "verified",
+  },
+  admin: {
+    id: "usr_adm_001",
+    name: "Модератор Платформы",
+    email: "admin@demo.ru",
+    avatar: "https://api.dicebear.com/9.x/bottts/svg?seed=Admin",
+    city: "Москва",
+    interests: ["модерация", "аналитика"],
+    role: "admin",
+    tokenBalance: 0,
+    verificationStatus: "none",
+  },
+  partner: {
+    id: "usr_ptr_001",
+    name: "Кафе «ЭкоПоинт»",
+    email: "partner@demo.ru",
+    avatar: "https://api.dicebear.com/9.x/shapes/svg?seed=EcoPoint",
+    city: "Казань",
+    interests: ["бонусы", "локальный бизнес"],
+    role: "partner",
+    tokenBalance: 0,
+    verificationStatus: "verified",
+  },
+};
